@@ -1,0 +1,127 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar">
+      <ion-button fill="clear" shape="round" (click)="navigateTo('tabs/activity')" expand="fill">
+        <ion-icon name="chevron-back"></ion-icon>Back
+      </ion-button>
+      <ion-title>
+        <p>Sensors</p>
+      </ion-title>
+      <div class="user">
+        <img (click)="presentModal('profile')" button src="../../assets/images/user-male.png" alt="">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <div class="title">
+        <div class="title-hero">
+          <p>Temperature sensor</p>
+        </div>
+        <div class="id">
+          <p>#TEM001</p>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-card-content>
+          <div class="row">
+            <div class="col">
+              <div class="category">
+                <p>Latest reading</p>
+              </div>
+              <div class="time">
+                <p>5:30PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="content">
+                <div class="temperature">
+                  <ion-icon name="thermometer-outline"></ion-icon>
+                </div>
+                <div class="value-1">
+                  <p>25.4&#8451;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-label>History</ion-label>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="chart">
+            <canvas #barChart></canvas>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="setting">
+        <ion-card-header>
+          <div class="item">
+            <ion-label>Sensor settings</ion-label>
+            <ion-label><a (click)="presentModal('edit-sensor')">Edit</a></ion-label>
+          </div>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="item">
+            <div class="key">
+              <p>Name</p>
+            </div>
+            <div class="value">
+              <p>: <b>#TEM001</b></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="key">
+              <p>Location</p>
+            </div>
+            <div class="value">
+              <p>: <b>Yellow zone 12:34</b></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="key">
+              <p>Date added</p>
+            </div>
+            <div class="value">
+              <p>: <b>24 June 2010</b></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="key">
+              <p>Date updated</p>
+            </div>
+            <div class="value">
+              <p>: <b>25 June 2010</b></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="key">
+              <p>Data storage</p>
+            </div>
+            <div class="value">
+              <p>: <b>Cloud 874856</b></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="key">
+              <p>Safe range</p>
+            </div>
+            <div class="value">
+              <p>: <b>22-29&#8451;</b></p>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

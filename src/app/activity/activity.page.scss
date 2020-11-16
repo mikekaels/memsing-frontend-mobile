@@ -1,0 +1,144 @@
+ion-header {
+  ion-toolbar {
+    div.toolbar {
+      display: flex;
+      // justify-content: space-between;
+
+      ion-button {
+        position: absolute;
+        top: 13px;
+        left: -15px;
+      }
+
+      div.title {
+        // background-color: red;
+        width: 100%;
+        text-align: center;
+
+        p {
+          font-size: 25px;
+          font-weight: 700;
+          margin: 20px 0px;
+        }
+      }
+
+      div.user {
+        position: absolute;
+        padding: 0px 0px;
+        // background-color: blue;
+        // float: right;
+        right: 0;
+
+        img {
+          // right: 0px;
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+ion-content {
+  ion-card {
+    ion-card-content {
+      div.row {
+        width: 100%;
+        justify-content: space-between;
+        // background-color: greenyellow;
+
+        div.col {
+          // background-color: antiquewhite;
+          width: 100%;
+          display: flex;
+        }
+
+
+      }
+
+      div.category {
+        width: 70%;
+        // background-color: red;
+
+        p {
+          color: #023C52;
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+
+      div.time {
+        width: 30%;
+        // background-color: blue;
+
+
+        p {
+          margin-top: 2px;
+          text-align: right;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+      div.id {
+        width: 100%;
+
+        p {
+          text-align: left;
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+
+      div.details {
+        width: 100%;
+
+        p {
+          text-align: left;
+          font-size: 23px;
+          font-weight: 700;
+        }
+      }
+
+      div.arrow {
+        position: absolute;
+        right: 20px;
+        top: 60px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  ion-card.add {
+    ion-card-content {
+      text-align: center;
+      color: #023C52;
+      ;
+
+      ion-icon {
+        font-size: 40px;
+        color: #023C52;
+        ;
+      }
+    }
+  }
+
+  ion-card.edit {
+
+    --background: #023C52;
+
+    ion-card-content {
+      text-align: center;
+
+      p {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+
+
+}

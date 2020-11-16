@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar">
+      <ion-button fill="clear" shape="round" (click)="navigateTo('tabs/home')" expand="fill">
+        <ion-icon name="chevron-back"></ion-icon>Back
+      </ion-button>
+      <div class="title">
+        <p>Activity</p>
+      </div>
+      <div class="user">
+        <img (click)="presentModal('profile')" button src="../../assets/images/user-male.png" alt="">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-card button (click)="navigateTo('tabs/sensors')">
+        <ion-card-content>
+          <div class="row">
+            <div class="col">
+              <div class="category">
+                <p>Absolute Temperature Sensor</p>
+              </div>
+              <div class="time">
+                <p>5:30PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="id">
+                <p>#TEM001</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="details">
+                <p>254 mm Hg</p>
+              </div>
+            </div>
+          </div>
+          <div class="arrow">
+            <img src="assets/icon/right-arrow.svg" alt="">
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card button class="add" (click)="presentModal('add-sensor')">
+        <ion-card-content>
+          <ion-icon name="add-circle-outline"></ion-icon>
+          <p>Add Sensor</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card button class="edit" (click)="presentModal('edit-sensor')">
+        <ion-card-content>
+          <p>Edit</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

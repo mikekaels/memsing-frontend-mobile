@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar">
+      <ion-button fill="clear" shape="round" (click)="navigateTo('tabs/home')" expand="fill">
+        <ion-icon name="chevron-back"></ion-icon>Back
+      </ion-button>
+      <div class="title">
+        <p>Devices</p>
+      </div>
+      <div class="user">
+        <img (click)="presentModal('profile')" button src="../../assets/images/user-male.png" alt="">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <div class="title">
+        <p>Active</p>
+      </div>
+
+      <ion-card>
+        <ion-card-content>
+          <div class="item">
+            <div class="id">
+              <p>#TEM001</p>
+            </div>
+            <div class="details">
+              <p>92%</p>
+              <p>battery</p>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <div class="item">
+            <div class="id">
+              <p>#TEM001</p>
+            </div>
+            <div class="details">
+              <p>92%</p>
+              <p>battery</p>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <div class="title">
+        <p class="inactive">Inactive</p>
+      </div>
+
+      <ion-card>
+        <ion-card-content>
+          <div class="item">
+            <div class="id">
+              <p>#TEM001</p>
+            </div>
+            <div class="details">
+              <p>92%</p>
+              <p>battery</p>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

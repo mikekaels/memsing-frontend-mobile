@@ -1,0 +1,23 @@
+ion-content {
+  --background: #024058;
+  --overflow: hidden;
+}
+
+.card-center {
+  width: 100%; // adjust width on your ion-card suitable on your screen
+}
+
+.main {
+  margin-top: 11rem;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+    color: white;
+  }
+}

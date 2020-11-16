@@ -1,0 +1,22 @@
+ion-tab-button {
+  display: grid;
+  justify-content: center;
+  --color-selected: #023C52;
+  color: #023C52;
+
+  svg {
+    height: 30px;
+    padding: 0px 5px;
+    margin-right: 5px;
+    // background-color: red;
+    fill: #023C52;
+  }
+}
+
+:target {
+  fill: red;
+}
+
+ion-tab-bar {
+  height: 70px;
+}

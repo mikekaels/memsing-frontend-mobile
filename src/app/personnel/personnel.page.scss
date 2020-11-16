@@ -1,0 +1,112 @@
+ion-header {
+  ion-toolbar {
+    div.toolbar {
+      display: flex;
+      // justify-content: space-between;
+
+      ion-button {
+        position: absolute;
+        top: 12px;
+        left: -15px;
+      }
+
+      div.title {
+        // background-color: red;
+        width: 100%;
+        text-align: center;
+
+        p {
+          font-size: 25px;
+          font-weight: 700;
+          margin: 20px 0px;
+        }
+      }
+
+      div.user {
+        position: absolute;
+        padding: 0px 0px;
+        // background-color: blue;
+        // float: right;
+        right: 0;
+
+        img {
+          // right: 0px;
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+ion-content {
+  ion-card {
+    --background: #024058;
+
+    ion-card-content {
+      text-align: center;
+      color: white;
+
+      p:nth-child(1) {
+        font-size: 30px;
+        font-weight: 800;
+      }
+
+      p:nth-child(2) {
+        font-size: 23px;
+        font-weight: 600;
+      }
+
+    }
+  }
+
+  div.users {
+    // background-color: antiquewhite;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+
+    div.user {
+      width: 70px;
+      height: 70px;
+      // background-color: aquamarine;
+      border-radius: 50%;
+      box-shadow:
+        0 0.5px 1.6px rgba(0, 0, 0, 0.016),
+        0 1.4px 4.1px rgba(0, 0, 0, 0.022),
+        0 2.8px 8.3px rgba(0, 0, 0, 0.028),
+        0 5.8px 17.2px rgba(0, 0, 0, 0.034),
+        0 16px 47px rgba(0, 0, 0, 0.05);
+      margin-bottom: 50px;
+
+      div.name {
+
+        margin-top: -15px;
+        text-align: center;
+
+        p {
+          font-size: 15px;
+          font-weight: 600;
+          color: rgb(158, 158, 158);
+        }
+
+        p:nth-child(2) {
+          margin-top: -15px;
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+
+      text-align: center;
+
+      ion-icon {
+        margin: 13px 0px;
+        font-size: 45px;
+        --ionicon-stroke-width: 50px;
+        color: #024058;
+      }
+    }
+  }
+}

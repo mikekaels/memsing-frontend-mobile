@@ -1,0 +1,7 @@
+{
+  "name": "memshing-mobile-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

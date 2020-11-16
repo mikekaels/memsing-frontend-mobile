@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar">
+      <div class="title">
+        <p>Home</p>
+      </div>
+      <div class="user">
+        <img (click)="presentModal()" button src="../../assets/images/user-male.png" alt="">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-card button>
+        <ion-card-content>
+          <div class="image" (click)="navigateTo('tabs/activity')">
+            <img src="../../assets/icon/activity.svg" alt="">
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card button>
+        <ion-card-content>
+          <div class="image" (click)="navigateTo('tabs/devices')">
+            <img src="../../assets/icon/devices.svg" alt="">
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card button>
+        <ion-card-content>
+          <div class="image" (click)="navigateTo('tabs/personnel')">
+            <img src="../../assets/icon/personel.svg" alt="">
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

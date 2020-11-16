@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar">
+      <ion-button fill="clear" shape="round" (click)="navigateTo('tabs/home')" expand="fill">
+        <ion-icon name="chevron-back"></ion-icon>Back
+      </ion-button>
+      <div class="title">
+        <p>Personnel</p>
+      </div>
+      <div class="user">
+        <img (click)="presentModal('profile')" button src="../../assets/images/user-male.png" alt="">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <p>Company A</p>
+      <p>Team J</p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <div class="users">
+    <div class="user">
+      <img src="../../assets/images/user-male.png" alt="">
+      <div class="name">
+        <p>Mike</p>
+        <p>(Owner)</p>
+      </div>
+    </div>
+    <div class="user">
+      <img src="../../assets/images/user-male.png" alt="">
+      <div class="name">
+        <p>Agnes</p>
+      </div>
+    </div>
+    <div class="user">
+      <img src="../../assets/images/user-male.png" alt="">
+      <div class="name">
+        <p>Jesica</p>
+      </div>
+    </div>
+    <div class="user">
+      <img src="../../assets/images/user-male.png" alt="">
+      <div class="name">
+        <p>Onald</p>
+      </div>
+    </div>
+    <div class="user">
+      <img src="../../assets/images/user-male.png" alt="">
+      <div class="name">
+        <p>Christian</p>
+      </div>
+    </div>
+    <div class="user">
+      <ion-icon name="add-outline"></ion-icon>
+    </div>
+  </div>
+
+</ion-content>
